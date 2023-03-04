@@ -27,7 +27,7 @@ export default function Home() {
 
       <main className="bg-white px-10 mid:px-20 lg:px-40 dark:bg-gray-800">
         <nav className="py-10 mb-5 flex justify-between">
-          <h1 className="text-xl font-bold dark:text-gray-200">My Portfolio</h1>
+          <h1 className="text-xl font-bold text-gray-800 dark:text-gray-200">My Portfolio</h1>
           <ul className="flex items-center">
             <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-gray-300"/></li>
             <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 dark:text-gray-100" href="">Resume</a></li>
@@ -64,12 +64,12 @@ export default function Home() {
           <div className="relative text-center mx-auto md:flex gap-10">
             <div className="py-3 mb-8 shadow-xl rounded-lg bg-gray-300 dark:bg-gray-700">
               <Image src={web1} alt="Tennis Club" />
-              <h4 className="text-xl font-medium pt-8 pb-2 text-teal-500">Tennis Club</h4>
+              <h4 className="text-xl font-medium pt-10 pb-2 text-teal-500">Tennis Club</h4>
               <p className="text-md text-gray-600 pt-1 pb-6 dark:text-gray-400">HTML | SASS | Bootstrap</p>
             </div>
             <div className="py-3 mb-8 shadow-xl rounded-lg bg-gray-300 dark:bg-gray-700">
               <Image src={web2} alt="Bookstore" />
-              <h4 className="text-xl font-medium pt-4 pb-2 text-teal-500">Bookstore</h4>
+              <h4 className="text-xl font-medium pt-6 pb-2 text-teal-500">Bookstore</h4>
               <p className="text-md text-gray-600 pt-1 pb-6 dark:text-gray-400">HTML | SASS | JavaScript | Bootstrap</p>
             </div>
             <div className="py-3 mb-8 shadow-xl rounded-lg bg-gray-300 dark:bg-gray-700">
