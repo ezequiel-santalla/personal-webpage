@@ -39,14 +39,14 @@ export default function Home() {
           <h3 className="text-xl py-2 md:text-2xl dark:text-gray-300">Developer and Designer</h3>
           <p className="text-md py-5 leading-8 text-gray-600 md:text-lg max-w-md mx-auto dark:text-gray-400">Programming and new technologies enthusiast. Join me down below and take a look of my projects!</p>
         </section>
-        <section className="text-4xl flex justify-center gap-16 py-2 text-gray-600 dark:text-gray-400">
+        <section className="text-4xl flex justify-center gap-10 md:gap-16 py-2 text-gray-600 dark:text-gray-400">
           <a href="https://www.linkedin.com/in/ezesantalla/" target="_blank" alt="LinkedIn icon"><AiFillLinkedin className="hover:scale-125 hover:text-teal-500 duration-300 active:text-teal-400"/></a>
           <a href="https://github.com/ezequiel-santalla" target="_blank" alt="GitHub icon"> <AiFillGithub className="hover:scale-125 hover:text-teal-500 duration-300 active:text-teal-400"/></a>
           <a href="https://twitter.com/eze_santalla" target="_blank" alt="Twitter icon"><AiFillTwitterCircle className="hover:scale-125 hover:text-teal-500 duration-300 active:text-teal-400"/></a>
           <a href="https://www.instagram.com/ezesantalla/" target="_blank" alt="Instagram icon"><AiFillInstagram className="hover:scale-125 hover:text-teal-500 duration-300 active:text-teal-400"/></a>
           <a href="https://wa.me/2236015315" target="_blank" alt="Phone icon"><AiFillPhone className="hover:scale-125 hover:text-teal-500 duration-300 active:text-teal-400"/></a>
         </section>
-        <section className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-8 overflow-hidden">
+        <section className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-8 overflow-hidden hover:scale-105 duration-300">
           <Image src={profilePic} layout="fill" objectFit="cover" alt="Profile pic" />
         </section>
 
@@ -61,21 +61,21 @@ export default function Home() {
           <div className="p-8">
             <h3 className="text-2xl dark:text-gray-300">Portfolio</h3>
           </div>
-          <div className="relative text-center mx-auto md:flex gap-10">
-            <a href="https://ezequiel-santalla.github.io/santalla-tenis-club/" target="_blank" alt="Tennis Club"><div className="py-3 mb-8 shadow-xl rounded-lg bg-gray-300 w-96 h-96 hover:scale-105 duration-300 dark:bg-gray-700">
+          <div className="relative text-center mx-auto gap-10 md:flex">
+            <a href="https://ezequiel-santalla.github.io/santalla-tenis-club/" target="_blank" alt="Tennis Club"><div className="py-3 mb-8 shadow-xl rounded-lg bg-gray-300 hover:scale-105 duration-300 dark:bg-gray-700">
               <Image src={web1} alt="Tennis Club" />
-              <h4 className="text-xl font-medium pt-10 pb-2 text-teal-500">Tennis Club</h4>
-              <p className="text-md text-gray-600 pt-1 pb-6 dark:text-gray-400">HTML | SASS | Bootstrap</p>
+              <h4 className="py-2 text-xl font-medium text-teal-500">Tennis Club</h4>
+              <p className="pt-1 pb-4 px-3 text-md text-gray-600 dark:text-gray-400">HTML | SASS | Bootstrap</p>
             </div></a>
-            <a href="https://ezequiel-santalla.github.io/bookstore/" target="_blank" alt="Bookstore"><div className="py-3 mb-8 shadow-xl rounded-lg bg-gray-300 w-96 h-96 hover:scale-105 duration-300 dark:bg-gray-700">
+            <a href="https://ezequiel-santalla.github.io/bookstore/" target="_blank" alt="Bookstore"><div className="py-3 mb-8 shadow-xl rounded-lg bg-gray-300 hover:scale-105 duration-300 dark:bg-gray-700">
               <Image src={web2} alt="Bookstore" />
-              <h4 className="text-xl font-medium pt-6 pb-2 text-teal-500">Bookstore</h4>
-              <p className="text-md text-gray-600 pt-1 pb-6 dark:text-gray-400">HTML | SASS | JavaScript | Bootstrap</p>
+              <h4 className="py-2 text-xl font-medium text-teal-500">Bookstore</h4>
+              <p className="pt-1 pb-4 px-3 text-md text-gray-600 dark:text-gray-400">JavaScript | Bootstrap</p>
             </div></a>
-            <a href="https://ezequiel-santalla.github.io/weather-application/" target="_blank" alt="Weather App"><div className="py-3 mb-8 shadow-xl rounded-lg bg-gray-300 w-96 h-96 hover:scale-105 duration-300 dark:bg-gray-700">
+            <a href="https://ezequiel-santalla.github.io/weather-application/" target="_blank" alt="Weather App"><div className="py-3 mb-8 shadow-xl rounded-lg bg-gray-300 hover:scale-105 duration-300 dark:bg-gray-700">
               <Image src={web3} alt="Weather App" />
-              <h4 className="text-xl font-medium pt-10 pb-2 text-teal-500">Weather App</h4>
-              <p className="text-md text-gray-600 pt-1 pb-6 dark:text-gray-400">HTML | CSS | JavaScript | React</p>
+              <h4 className="py-2 text-xl font-medium text-teal-500">Weather App</h4>
+              <p className="pt-1 pb-4 px-3 text-md text-gray-600 dark:text-gray-400">CSS | JavaScript | React</p>
             </div></a>
           </div>
         </section>
