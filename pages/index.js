@@ -9,6 +9,7 @@ import {
 } from 'react-icons/ai';
 import Image from 'next/legacy/image';
 import profilePic from '../public/profile-pic.jpeg';
+import coder from '../public/coder.jpeg';
 import web1 from '../public/web1.jpeg';
 import web2 from '../public/web2.jpeg';
 import web3 from '../public/web3.jpeg';
@@ -26,60 +27,110 @@ export default function Home() {
       </Head>
 
       <main className="bg-white px-10 mid:px-20 lg:px-40 dark:bg-gray-800">
+
+        {/* Nav */}
         <nav className="py-10 mb-5 flex justify-between">
           <h1 className="text-xl font-bold text-gray-800 dark:text-gray-200">My Portfolio</h1>
           <ul className="flex items-center">
-            <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl hover:scale-125 duration-300 dark:text-gray-300"/></li>
+            <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl hover:scale-125 duration-300 dark:text-gray-200"/></li>
             <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 dark:text-gray-100" href="">Resume</a></li>
           </ul>
         </nav>
 
+        {/* Presentation */}
         <section className="text-center p-2">
           <h2 className="text-4xl py-1 text-teal-500 font-medium md:text-5xl">Ezequiel Santalla</h2>
           <h3 className="text-xl py-2 md:text-2xl dark:text-gray-300">Developer and Designer</h3>
-          <p className="text-md py-5 leading-8 text-gray-600 md:text-lg max-w-md mx-auto dark:text-gray-400">Programming and new technologies enthusiast. Join me down below and take a look of my projects!</p>
+          <p className="text-lg py-5 leading-8 text-gray-600 md:text-lg max-w-md mx-auto dark:text-gray-400">Programming and new technologies enthusiast from Mar del Plata, Argentina. Join me down below and take a look of my projects!</p>
         </section>
+
+        {/* Social Media */}
         <section className="text-4xl flex justify-center gap-10 md:gap-16 py-2 text-gray-600 dark:text-gray-400">
-          <a href="https://www.linkedin.com/in/ezesantalla/" target="_blank" alt="LinkedIn icon"><AiFillLinkedin className="hover:scale-125 hover:text-teal-500 duration-300 active:text-teal-400"/></a>
-          <a href="https://github.com/ezequiel-santalla" target="_blank" alt="GitHub icon"> <AiFillGithub className="hover:scale-125 hover:text-teal-500 duration-300 active:text-teal-400"/></a>
-          <a href="https://twitter.com/eze_santalla" target="_blank" alt="Twitter icon"><AiFillTwitterCircle className="hover:scale-125 hover:text-teal-500 duration-300 active:text-teal-400"/></a>
-          <a href="https://www.instagram.com/ezesantalla/" target="_blank" alt="Instagram icon"><AiFillInstagram className="hover:scale-125 hover:text-teal-500 duration-300 active:text-teal-400"/></a>
-          <a href="https://wa.me/2236015315" target="_blank" alt="Phone icon"><AiFillPhone className="hover:scale-125 hover:text-teal-500 duration-300 active:text-teal-400"/></a>
+          <a href="https://www.linkedin.com/in/ezesantalla/" target="_blank" alt="LinkedIn icon"><AiFillLinkedin className="hover:scale-125 hover:text-teal-500 duration-300"/></a>
+          <a href="https://github.com/ezequiel-santalla" target="_blank" alt="GitHub icon"> <AiFillGithub className="hover:scale-125 hover:text-teal-500 duration-300"/></a>
+          <a href="https://twitter.com/eze_santalla" target="_blank" alt="Twitter icon"><AiFillTwitterCircle className="hover:scale-125 hover:text-teal-500 duration-300"/></a>
+          <a href="https://www.instagram.com/ezesantalla/" target="_blank" alt="Instagram icon"><AiFillInstagram className="hover:scale-125 hover:text-teal-500 duration-300"/></a>
+          <a href="https://wa.me/2236015315" target="_blank" alt="Phone icon"><AiFillPhone className="hover:scale-125 hover:text-teal-500 duration-300"/></a>
         </section>
         <section className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-8 overflow-hidden hover:scale-105 duration-300">
           <Image src={profilePic} layout="fill" objectFit="cover" alt="Profile pic" />
         </section>
 
+        {/* About Me */}
         <section>
           <div className="p-8">
-            <h3 className="text-2xl py-2 dark:text-gray-300">About Me</h3>
-            <p className="text-md py-3 leading-8 text-gray-600 dark:text-gray-400">Programmer specialized in <span className="text-teal-500 font-medium">front-end</span> development with technologies such as HTML, JavaScript, Next.js, React.js, and Tailwind CSS. I created <span className="text-teal-500 font-medium">3 projects</span> with these and other technologies and I keep learning every day in this huge world.</p>
+            <h3 className="text-3xl font-semibold pt-8 pb-2 dark:text-gray-300">About Me</h3>
+            <p className="text-lg pt-3 pb-8 leading-8 text-gray-600 lg:pb-24 dark:text-gray-400">Web Developer specialized in <span className="text-teal-500 font-medium">front-end</span> development with technologies such as HTML, JavaScript, Next.js, React.js, and Tailwind CSS. I created <span className="text-teal-500 font-medium">3 projects</span> with these and other technologies and I keep learning every day in this huge world.</p>
           </div>
         </section>
 
+        {/* Certifications */}
         <section>
           <div className="p-8">
-            <h3 className="text-2xl dark:text-gray-300">Portfolio</h3>
+            <h3 className="text-3xl font-semibold py-2 dark:text-gray-300">Certifications</h3>
+          </div>
+          <div className="xl:flex justify-center gap-16">
+            <a href="https://us.coderhouse.com/certificados/633e4dac6ebea6000f8d3679" target="_blank" alt="Desarrollo Web Certificate">
+              <div className="text-left py-4 pl-4 pr-8 mb-8 gap-6 flex shadow-2xl rounded-lg hover:scale-105 duration-300">
+                <div>
+                  <Image className="rounded-3xl" src={coder} alt="Coderhouse" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold pt-2 dark:text-gray-300">Web Development</h4>
+                  <p className="text-lg font-normal text-gray-500">Coderhouse</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://us.coderhouse.com/certificados/63e96ac03a2f13000e5a677d" target="_blank" alt="JavaScript Certificate">
+              <div className="text-left py-4 pl-4 pr-28 mb-8 gap-6 flex shadow-2xl rounded-lg hover:scale-105 duration-300">
+                <div>
+                  <Image className="rounded-3xl" src={coder} alt="Coderhouse" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold pt-2 dark:text-gray-300">JavaScript</h4>
+                  <p className="text-lg font-normal text-gray-500">Coderhouse</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" target="_blank" alt="React Certificate">
+              <div className="text-left py-4 pl-4 pr-28 mb-8 gap-6 flex shadow-2xl rounded-lg hover:scale-105 duration-300">
+                <div>
+                  <Image className="rounded-3xl" src={coder} alt="Coderhouse" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold pt-2 dark:text-gray-300">React</h4>
+                  <p className="text-lg font-normal text-gray-500">Coderhouse</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        {/* Portfolio */}
+        <section>
+          <div className="p-8">
+            <h3 className="text-3xl font-semibold pt-8 pb-2 lg:pt-24 dark:text-gray-300">Portfolio</h3>
           </div>
           <div className="relative text-center mx-auto gap-10 md:flex">
-            <a href="https://ezequiel-santalla.github.io/santalla-tenis-club/" target="_blank" alt="Tennis Club"><div className="py-3 mb-8 shadow-xl rounded-lg bg-gray-300 hover:scale-105 duration-300 dark:bg-gray-700">
+            <a href="https://ezequiel-santalla.github.io/santalla-tenis-club/" target="_blank" alt="Tennis Club"><div className="py-4 mb-8 shadow-xl rounded-lg bg-gray-300 hover:scale-105 duration-300 dark:bg-gray-700">
               <Image src={web1} alt="Tennis Club" />
               <h4 className="py-2 text-xl font-medium text-teal-500">Tennis Club</h4>
               <p className="pt-1 pb-4 px-3 text-md text-gray-600 dark:text-gray-400">HTML | SASS | Bootstrap</p>
             </div></a>
-            <a href="https://ezequiel-santalla.github.io/bookstore/" target="_blank" alt="Bookstore"><div className="py-3 mb-8 shadow-xl rounded-lg bg-gray-300 hover:scale-105 duration-300 dark:bg-gray-700">
+            <a href="https://ezequiel-santalla.github.io/bookstore/" target="_blank" alt="Bookstore"><div className="py-4 mb-8 shadow-xl rounded-lg bg-gray-300 hover:scale-105 duration-300 dark:bg-gray-700">
               <Image src={web2} alt="Bookstore" />
               <h4 className="py-2 text-xl font-medium text-teal-500">Bookstore</h4>
               <p className="pt-1 pb-4 px-3 text-md text-gray-600 dark:text-gray-400">JavaScript | Bootstrap</p>
             </div></a>
-            <a href="https://ezequiel-santalla.github.io/weather-application/" target="_blank" alt="Weather App"><div className="py-3 mb-8 shadow-xl rounded-lg bg-gray-300 hover:scale-105 duration-300 dark:bg-gray-700">
+            <a href="https://ezequiel-santalla.github.io/weather-application/" target="_blank" alt="Weather App"><div className="py-4 mb-8 shadow-xl rounded-lg bg-gray-300 hover:scale-105 duration-300 dark:bg-gray-700">
               <Image src={web3} alt="Weather App" />
               <h4 className="py-2 text-xl font-medium text-teal-500">Weather App</h4>
-              <p className="pt-1 pb-4 px-3 text-md text-gray-600 dark:text-gray-400">CSS | JavaScript | React</p>
+              <p className="pt-1 pb-4 px-3 text-md text-gray-600 dark:text-gray-400">JavaScript | React | CSS</p>
             </div></a>
           </div>
         </section>
 
+        {/* Footer */}
         <footer>
           <p className="text-sm text-gray-600 pl-6 pb-5 dark:text-gray-400">Copyright © 2023 All Rights Reserved by Ezequiel Santalla</p>
         </footer>
