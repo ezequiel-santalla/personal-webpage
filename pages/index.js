@@ -60,7 +60,7 @@ export default function Home() {
         <section>
           <div className="p-8">
             <h3 className="text-3xl font-semibold pt-8 pb-2 dark:text-gray-300">About Me</h3>
-            <p className="text-lg pt-3 pb-8 leading-8 text-gray-600 lg:pb-24 dark:text-gray-400">Web Developer specialized in <span className="text-teal-500 font-medium">front-end</span> development with technologies such as HTML, JavaScript, Next.js, React.js, and Tailwind CSS. I created <span className="text-teal-500 font-medium">3 projects</span> with these and other technologies and I keep learning every day in this huge world.</p>
+            <p className="text-lg pt-3 pb-8 leading-8 text-gray-600 lg:pb-24 dark:text-gray-400">Web Developer specialized in <span className="text-teal-500 font-medium">front-end</span> development with technologies such as HTML, JavaScript, Next.js, React.js, and Tailwind CSS. I created <span className="text-teal-500 font-medium">multiple projects</span> with these and other technologies and I keep learning every day in this huge world.</p>
           </div>
         </section>
 
@@ -70,7 +70,7 @@ export default function Home() {
             <h3 className="text-3xl font-semibold py-2 dark:text-gray-300">Certifications</h3>
           </div>
           <div className="xl:flex justify-center gap-16">
-            <a href="https://us.coderhouse.com/certificados/633e4dac6ebea6000f8d3679" target="_blank" alt="Desarrollo Web Certificate">
+            <a href="https://imgur.com/clj6znq" target="_blank" alt="Desarrollo Web Certificate">
               <div className="text-left py-4 pl-4 pr-8 mb-8 gap-6 flex shadow-2xl rounded-lg hover:scale-105 duration-300">
                 <div>
                   <Image className="rounded-3xl" src={coder} alt="Coderhouse" />
@@ -81,7 +81,7 @@ export default function Home() {
                 </div>
               </div>
             </a>
-            <a href="https://us.coderhouse.com/certificados/63e96ac03a2f13000e5a677d" target="_blank" alt="JavaScript Certificate">
+            <a href="https://imgur.com/A9zdX1j" target="_blank" alt="JavaScript Certificate">
               <div className="text-left py-4 pl-4 pr-28 mb-8 gap-6 flex shadow-2xl rounded-lg hover:scale-105 duration-300">
                 <div>
                   <Image className="rounded-3xl" src={coder} alt="Coderhouse" />
@@ -122,10 +122,10 @@ export default function Home() {
               <h4 className="py-2 text-xl font-medium text-teal-500">Bookstore</h4>
               <p className="pt-1 pb-4 px-3 text-md text-gray-600 dark:text-gray-400">JavaScript | Bootstrap</p>
             </div></a>
-            <a href="https://ezequiel-santalla.github.io/weather-application/" target="_blank" alt="Weather App"><div className="py-4 mb-8 shadow-xl rounded-lg bg-gray-300 hover:scale-105 duration-300 dark:bg-gray-700">
+            <a href="https://f1-shop.vercel.app/" target="_blank" alt="Weather App"><div className="py-4 mb-8 shadow-xl rounded-lg bg-gray-300 hover:scale-105 duration-300 dark:bg-gray-700">
               <Image src={web3} alt="Weather App" />
-              <h4 className="py-2 text-xl font-medium text-teal-500">Weather App</h4>
-              <p className="pt-1 pb-4 px-3 text-md text-gray-600 dark:text-gray-400">JavaScript | React | CSS</p>
+              <h4 className="py-2 text-xl font-medium text-teal-500">F1 Shop</h4>
+              <p className="pt-1 pb-4 px-3 text-md text-gray-600 dark:text-gray-400">JavaScript | React | Tailwind CSS</p>
             </div></a>
           </div>
         </section>
